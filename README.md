@@ -14,13 +14,13 @@ Para iniciar o projeto é necessário:
 <p>4- Agora basta acessar o servidor local atraves da url http://localhost/kabum/index.php<br/></p>
 
 <p>5- Para fazer o login use o usuario "admin" e a senha "1234"<br/></p>
- <img src=".github/login.png"  height="420" width="420">
+ <img src=".github/login.png"  height="420" width="820">
  
 <p>5- Após logado vc estará na url http://localhost/kabum/clientes.php onde é listado os clientes cadastrados, clique no botão "adicionar cliente para cadastrar um novo."<br/></p>
- <img src=".github/lista.png"  height="420" width="420">
+ <img src=".github/lista.png"  height="420" width="820">
 
 <p>6- Na tela de cadastro insira os dados e clique em "Cadastrar":"<br/></p>
- <img src=".github/cadastro.png"  height="420" width="420">
+ <img src=".github/cadastro.png"  height="420" width="820">
  
 <p>7- Para editar ou excluir basta clicar nos botões laranja e vermelho respectivamente."<br/></p>
 
