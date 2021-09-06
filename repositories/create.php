@@ -19,8 +19,9 @@ if(isset($_POST['btn-cadastrar'])):
 	$cpf = clear($_POST['cpf']);
 	$rg = clear($_POST['rg']);
 	$telefone = clear($_POST['telefone']);
+	$endereco = clear($_POST['endereco']);
 
-	$sql = "INSERT INTO cliente (nome, data_nascimento, cpf, rg, telefone ) VALUES ('$nome', '$data_nascimento', '$cpf','$rg', '$telefone')";
+	$sql = "INSERT INTO cliente (nome, data_nascimento, cpf, rg, telefone, endereco) VALUES ('$nome', '$data_nascimento', '$cpf','$rg', '$telefone', '$endereco')";
 
 	if(mysqli_query($connect, $sql)):
 		$_SESSION['mensagem'] = "Cadastrado com sucesso!";

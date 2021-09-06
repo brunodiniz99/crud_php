@@ -34,6 +34,11 @@ include_once 'components/header.php';
 				<label for="telefone">Telefone</label>
 			</div>
 
+			<div class="input-field col s12">
+				<input type="text" name="endereco" id="endereco">
+				<label for="endereco">Endereço</label>
+			</div>
+
 			<button type="submit" name="btn-cadastrar" class="btn"> Cadastrar </button>
 			<a href="clientes.php" class="btn green"> Lista de clientes </a>
 		</form>

@@ -10,10 +10,11 @@ if(isset($_POST['btn-editar'])):
 	$cpf = mysqli_escape_string($connect, $_POST['cpf']);
 	$rg = mysqli_escape_string($connect, $_POST['rg']);
 	$telefone = mysqli_escape_string($connect, $_POST['telefone']);
+	$endereco = mysqli_escape_string($connect, $_POST['endereco']);
 
 	$id = mysqli_escape_string($connect, $_POST['id']);
 
-	$sql = "UPDATE cliente SET nome = '$nome', data_nascimento = '$data_nascimento', cpf = '$cpf', rg = '$rg', telefone = '$telefone' WHERE id = $id";
+	$sql = "UPDATE cliente SET nome = '$nome', data_nascimento = '$data_nascimento', cpf = '$cpf', rg = '$rg', telefone = '$telefone', endereco = '$endereco' WHERE id = $id";
 
 	if(mysqli_query($connect, $sql)):
 		$_SESSION['mensagem'] = "Atualizado com sucesso!";

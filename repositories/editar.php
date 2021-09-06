@@ -43,6 +43,11 @@ endif;
 				<label for="telefone">Telefone</label>
 			</div>
 
+			<div class="input-field col s12">
+				<input type="text" value="<?php echo $dados['endereco'];?>" name="endereco" id="endereco">
+				<label for="endereco">Endereço</label>
+			</div>
+
 			<button type="submit" name="btn-editar" class="btn"> Atualizar</button>
 			<a href="../clientes.php" class="btn green"> Lista de clientes </a>
 		</form>

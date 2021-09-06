@@ -7,29 +7,16 @@ CREATE TABLE cliente(
 	id int NOT NULL AUTO_INCREMENT,
   	nome varchar(50) NOT NULL,
   	data_nascimento varchar(10) NOT NULL,
-  	cpf varchar(11) NOT NULL,
-  	rg varchar(15) NOT NULL,
-  	telefone varchar(15) NOT NULL,
+  	cpf varchar(20) NOT NULL,
+  	rg varchar(20) NOT NULL,
+  	telefone varchar(20) NOT NULL,
+	endereco varchar(100) NOT NULL,
 	PRIMARY KEY (id) 
-);
-
-CREATE TABLE endereco(
-	id int NOT NULL AUTO_INCREMENT,
-	logradouro varchar(50) NOT NULL,
-	numero varchar(4) NOT NULL,
-	bairro varchar(20) NOT NULL,
-  	cidade varchar(50) NOT NULL,
-  	uf varchar(2) NOT NULL,
-  	complemento varchar(50) DEFAULT NULL,
-  	cliente_id int NOT NULL,
-  	cep varchar(8) NOT NULL,
-  PRIMARY KEY (id),
-  KEY FK_CLIENTE_ID (cliente_id)
 );
 
 CREATE TABLE usuario(
 	id int NOT NULL AUTO_INCREMENT,
-  	username varchar(10) NOT NULL,
+  	username varchar(50) NOT NULL,
   	password varchar(50) NOT NULL,
   	PRIMARY KEY (id)
 );
@@ -37,8 +24,4 @@ CREATE TABLE usuario(
 INSERT INTO usuario (id, username, password) VALUES
 (1, 'admin', md5('1234'));
 
-select id from usuario where username='admin' and password=md5('1234');
-
-INSERT INTO cliente (nome, data_nascimento, cpf, rg, telefone ) VALUES ('joao', '222222', '111','3333', '44444');
-UPDATE cliente SET nome = 'maria', data_nascimento = '222', cpf = '222', rg = '222', telefone = '222' WHERE id = 1;
-
+INSERT INTO cliente (nome, data_nascimento, cpf, rg, telefone, endereco) VALUES ('bruno', '222', '222','222', '222', 'doidera')

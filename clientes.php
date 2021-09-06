@@ -18,6 +18,7 @@ include_once 'components/message.php';
 					<th>Cpf </th>
 					<th>Rg </th>
 					<th>Telefone </th>
+					<th>Endereço </th>
 				</tr>
 			</thead>
 
@@ -36,6 +37,7 @@ include_once 'components/message.php';
 							<td><?php echo $dados['cpf']; ?></td>
 							<td><?php echo $dados['rg']; ?></td>
 							<td><?php echo $dados['telefone']; ?></td>
+							<td><?php echo $dados['endereco']; ?></td>
 							<td><a href="repositories/editar.php?id=<?php echo $dados['id']; ?>" class="btn-floating orange"><i class="material-icons">edit</i></a></td>
 
 
@@ -62,6 +64,8 @@ include_once 'components/message.php';
 				else : ?>
 
 					<tr>
+						<td>-</td>
+						<td>-</td>
 						<td>-</td>
 						<td>-</td>
 						<td>-</td>
