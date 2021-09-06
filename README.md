@@ -6,7 +6,7 @@ Para iniciar o projeto é necessário:
 <br/> https://sourceforge.net/projects/wampserver/ </p>
 
 <p>2- Rode o console do mySQL e cole o script do Arquivo "database" na pasta do projeto preenchendo o banco e fazendo o insert do usuário. <br/></p>
- <img src=".github/criar_banco.png">
+ <img src=".github/banco.png">
 
 <p>3- Para rodar o projeto os arquivos precisam estar localizados na pasta do servidor que se encontram no caminho "C:\wamp64\www\" <br/></p>
 
