@@ -9,6 +9,7 @@ Para iniciar o projeto é necessário:
  <img src=".github/banco.png"  height="420" width="420">
 
 <p>3- Para rodar o projeto os arquivos precisam estar localizados na pasta do servidor que se encontram no caminho "C:\wamp64\www\" <br/></p>
+ <img src=".github/banco.png"  height="120" width="420">
 
 <p>4- <br/></p>
 
